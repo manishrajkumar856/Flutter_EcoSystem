@@ -1,10 +1,10 @@
 @font-face {
   font-family: sans;
-  src: url('4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvbQoi-E.woff2') format('woff2');
+  src: url(4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvbQoi-E.woff2);
 }
 @font-face {
   font-family: robot;
-  src: url("KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2") format('woff2');
+  src: url(KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBHMdazQ.woff2);
 }
 * {
   padding: 0;
@@ -317,15 +317,55 @@ h2 {
 }
 
 .view-7 .box-container {
-  padding: 0;
+  width: 85%;
+  max-width: 1280px;
+  height: auto;
   background-color: #042449;
   border-radius: 40px;
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.view-7 .box-container .text-sec {
+  width: 100%;
+  padding: 4rem 2rem;
+  color: var(--white-color);
+}
+.view-7 .box-container .text-sec h3 {
+  font-size: var(--font-size-heading-3);
+  margin-bottom: 1rem;
+}
+.view-7 .box-container .text-sec p {
+  font-size: var(--font-size-para-1);
+  margin-bottom: 1rem;
+}
+.view-7 .box-container .text-sec .btn-sec .btn-i {
+  background-color: #fff;
+  color: var(--blue-color);
+  padding: 0.6rem 2rem;
+}
+.view-7 .box-container .text-sec .btn-sec .btn-r {
+  background-color: transparent;
+}
+.view-7 .box-container .img-sec {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  z-index: 1;
 }
 .view-7 .box-container img {
-  position: relative;
+  width: 100%;
+  height: 100%;
+  height: auto;
+  border-radius: 0px 30px 30px 0;
   z-index: 1;
 }
 .view-7 .box-container .text-sec {
@@ -438,5 +478,23 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+  }
+  .view-7 .box-container {
+    width: 80%;
+  }
+  .view-7 .box-container .text-sec {
+    padding: 5rem 5rem;
+  }
+  .view-7 .box-container .text-sec h3 {
+    font-size: 60px;
+  }
+  .view-7 .box-container .text-sec p {
+    font-size: 20px;
+  }
+  .view-7 .box-container .text-sec .btn-sec {
+    margin-bottom: 1rem;
+  }
+  .view-7 .box-container .text-sec .btn-sec .btn-r, .view-7 .box-container .text-sec .btn-sec .btn-i {
+    padding: 0.8rem 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
